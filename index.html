@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <title>Integrador</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
-            <img src="./assets/353c8a6d2976418085b79b450fd16143.png" alt="">
+            <img src="./assets/fotor_2023-2-24_19_49_27.png" alt="" class="logo">
             <div class="listContainer">
                 <input type="checkbox" name="burgerMenu" id="burgerMenu">
                 <label for="burgerMenu" class="burgerMenu">
@@ -18,14 +20,133 @@
                 </label>
                 <div class="menu">
                     <ul class="listLinksMenu">
-                        <li><a href="#">INICIO</a></li>
-                        <li><a href="#">PRODUCTOS</a></li>
-                        <li><a href="#">TAKE AWAY</a></li>
-                        <li><a href="#">CONTACTANOS</a></li>
+                        <li><a href="#locations">DESTACADAS</a></li>
+                        <li><a href="#">QUIENES SOMOS</a></li>
+                        <li><a href="">CONTACTO</a></li>
+                        <li class="searchBar">
+                            <input type="text">
+                            <button>
+                                <img src="./assets/search_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="profileListItem"><a href="./login.html" class="profileContainer"><img
+                                    src="./assets/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt=""
+                                    class="profileImg"></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <main>
+        <section class="hero">
+            <div class="heroInfo">
+                <h1>Island Refugees</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit qui vitae incidunt perspiciatis nostrum
+                    sed at magni ad doloremque excepturi.</p>
+                <div class="buttonContainer">
+                    <button>Reserva</button>
+                    <button>Conocenos</button>
+                </div>
+            </div>
+            <img src="./assets/islandHero.svg" alt="">
+        </section>
+        <section class="locations" id="locations">
+            <div class="locationHeaderContainer">
+                <h2>Islands availables</h2>
+            </div>
+            <div class="locationsContainer">
+                <div class="location">
+                    <div class="locationImg">
+                        <img src="https://i.insider.com/60f6fcfdb917280012751c66?width=1136&format=jpeg" alt="">
+                    </div>
+                    <div class="locationInfo">
+                        <p>Carloforte <span>Italy</span></p>
+                        <figure>
+                            <img src="./assets/star_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                            <figcaption>4.5</figcaption>
+                        </figure>
+                    </div>
+                    <h3 class="locationDescription">
+                        Beatiful and unique island in Carloforte
+                    </h3>
+                </div>
+                <div class="location">
+                    <div class="locationImg">
+                        <img src="https://www.roadaffair.com/wp-content/uploads/2021/12/airbnb-st-thomas-us-virgin-islands.jpg"
+                            alt="">
+                    </div>
+                    <div class="locationInfo">
+                        <p>Magens Bay, US Virgin Islands</p>
+                        <figure>
+                            <img src="./assets/star_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                            <figcaption>4.8</figcaption>
+                        </figure>
+                    </div>
+                    <h3 class="locationDescription">
+                        Luxurious home located in the Caribbean
+                    </h3>
+                </div>
+                <div class="location">
+                    <div class="locationImg">
+                        <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2018/05/Bird-Island.jpg" alt="">
+                    </div>
+                    <div class="locationInfo">
+                        <p>Bird Island, Belice</p>
+                        <figure>
+                            <img src="./assets/star_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                            <figcaption>4.2</figcaption>
+                        </figure>
+                    </div>
+                    <h3 class="locationDescription">
+                        No connections for this exclusive island in Belice
+                    </h3>
+                </div>
+                <div class="location">
+                    <div class="locationImg">
+                        <img src="https://media.timeout.com/images/105898944/image.jpg" alt="">
+                    </div>
+                    <div class="locationInfo">
+                        <p>Rosario Islands, Colombia</p>
+                        <figure>
+                            <img src="./assets/star_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                            <figcaption>4.6</figcaption>
+                        </figure>
+                    </div>
+                    <h3 class="locationDescription">
+                        Travel to this hotel, down in South America
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <section class="aboutUs">
+            <div class="aboutUsContainer">
+                <h2>About Us</h2>
+                <p>
+                    With more than 20 years of experience, you gonna find here the best places in the world sorrounded
+                    by
+                    water.
+                    If your looking for isolation from the beach's crowd or even if you want a hotel that brings you
+                    breakfast to your boat. You'll find it here.
+                </p>
+                <img src="./assets/fotor_2023-2-24_19_49_27.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact" id="contact">
+            <div class="contactEmail">
+                <h3>Contact Us</h3>
+                <div class="sendEmail">
+                    <p>For general press inquiries, please email us at <a href="">press-in@islandrefugees.com</a></p>
+                </div>
+            </div>
+            <div class="companyMedia">
+                <a href=""><img src="./assets/twitter.svg" alt=""></a>
+                <a href=""><img src="./assets/instagram.svg" alt="">
+                </a><a><img src="./assets/facebook.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
