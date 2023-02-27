@@ -492,28 +492,24 @@ footer img {
   width: 100%;
   gap: 50px;
   color: var(--celadon-blue);
-  padding-left: 20px;
 }
 
 .contact h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .contactEmail {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  gap: 50px;
   width: 100%;
 }
 
 .contactEmail a {
   font-weight: 500;
   color: var(--celadon-blue);
-}
-
-.sendEmail {
-  align-self: flex-end;
 }
 
 .companyMedia {
@@ -541,8 +537,8 @@ footer img {
 
 @media (max-width: 1024px) and (min-width: 768px) {
 
-  .navbar img {
-    width: 80px;
+  .profileImg {
+    width: 50px;
   }
 
   .menu {
@@ -575,6 +571,20 @@ footer img {
   .listLinksMenu li:nth-child(5),
   .searchBar {
     opacity: 1;
+  }
+
+  .searchBar {
+    box-shadow: unset;
+    justify-content: center;
+  }
+
+  .searchBar button {
+    position: absolute;
+    right: 29%;
+  }
+
+  .searchBar img {
+    width: 30px;
   }
 
   .burgerMenu {
@@ -634,10 +644,6 @@ footer img {
     width: 100%;
     margin-top: 20px;
     text-align: center;
-  }
-
-  .sendEmail {
-    align-self: unset;
   }
 
   .companyMedia {
@@ -730,6 +736,20 @@ footer img {
     animation-fill-mode: forwards;
   }
 
+  .searchBar {
+    box-shadow: unset;
+    justify-content: center;
+  }
+
+  .searchBar button {
+    position: absolute;
+    right: 15%;
+  }
+
+  .searchBar img {
+    width: 30px;
+  }
+
   .hero {
     flex-direction: column;
     margin: 0;
@@ -737,9 +757,21 @@ footer img {
     gap: 20px;
   }
 
+  .heroInfo h1 {
+    font-size: 2rem;
+  }
+
+  .heroInfo p {
+    font-size: 1rem;
+  }
+
   .heroInfo h1,
   .heroInfo p {
     width: 100%;
+  }
+
+  .locationHeaderContainer {
+    justify-content: center;
   }
 
   .cards {
@@ -764,8 +796,18 @@ footer img {
     animation: unset;
   }
 
+  .aboutUsContainer p {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .aboutUsContainer img {
+    width: 100px;
+  }
+
   footer {
     flex-direction: column-reverse;
+    padding: 50px 20px;
   }
 
   footer img {
