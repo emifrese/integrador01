@@ -171,6 +171,10 @@ footer {
   .navbar h1 {
     font-size: 2rem;
   }
+
+  .navbar img {
+    width: 80px;
+  }
 }
 
 @media (max-width: 767px) {
