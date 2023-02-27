@@ -536,7 +536,6 @@ footer img {
 /* ----- Tablet ----- */
 
 @media (max-width: 1024px) and (min-width: 768px) {
-
   .profileImg {
     width: 50px;
   }
@@ -557,7 +556,8 @@ footer img {
     justify-content: space-evenly;
   }
 
-  .listLinksMenu li {
+  .listLinksMenu li,
+  .searchBar:hover {
     position: unset;
     animation: unset;
   }
@@ -576,6 +576,12 @@ footer img {
   .searchBar {
     box-shadow: unset;
     justify-content: center;
+  }
+
+  .searchBar:hover,
+  .searchBar:active,
+  .searchBar:has(input:focus-visible) {
+    box-shadow: unset;
   }
 
   .searchBar button {
@@ -599,15 +605,12 @@ footer img {
 
   #burgerMenu:checked ~ .menu {
     display: block;
-    position: absolute;
+    position: fixed;
     height: 400px;
     background: var(--honeydew);
     border-bottom: 1px solid var(--gray);
     top: 112px;
     left: 37%;
-    -webkit-transform: translateX(-30%);
-    transform: translateX(-30%);
-    margin: auto;
     text-align: center;
     animation-name: sideMenu;
     animation-duration: 0.3s;
@@ -664,7 +667,6 @@ footer img {
 /* ----- Mobile ----- */
 
 @media (max-width: 767px) {
-
   .navbar {
     height: 4rem;
   }
@@ -702,6 +704,12 @@ footer img {
   .listLinksMenu li:nth-child(5),
   .searchBar {
     opacity: 1;
+  }
+
+  .searchBar:hover,
+  .searchBar:active,
+  .searchBar:has(input:focus-visible) {
+    box-shadow: unset;
   }
 
   .burgerMenu {
