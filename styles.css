@@ -33,19 +33,13 @@
   }
 }
 
-@keyframes sideMenu {
-  0% {
-    transform: translateX(0px);
-    opacity: 20%;
+@keyframes fadingMenu {
+  from {
+    opacity: 0%;
   }
 
-  50% {
-    transform: translateX(-150px);
-    opacity: 50%;
-  }
-
-  100% {
-    transform: translateX(-300px);
+  to{
+    transform: translateX(0);
     opacity: 100%;
   }
 }
@@ -275,6 +269,7 @@ main {
 }
 
 /* Hero */
+
 .hero {
   width: 100%;
   border-radius: 10px;
@@ -536,16 +531,13 @@ footer img {
 /* ----- Tablet ----- */
 
 @media (max-width: 1024px) and (min-width: 768px) {
-  .profileImg {
-    width: 50px;
-  }
-
+  
   .menu {
     display: none;
     z-index: 1;
     width: 100vw;
   }
-
+  
   .listLinksMenu {
     display: flex;
     flex-direction: column-reverse;
@@ -555,70 +547,73 @@ footer img {
     width: 100%;
     justify-content: space-evenly;
   }
-
+  
   .listLinksMenu li,
   .searchBar:hover {
     position: unset;
     animation: unset;
   }
-
+  
   .listLinksMenu a {
     text-decoration: none;
     color: var(--celadon-blue);
     font-weight: 500;
   }
-
+  
   .listLinksMenu li:nth-child(5),
   .searchBar {
     opacity: 1;
   }
-
+  
   .searchBar {
     box-shadow: unset;
     justify-content: center;
   }
-
+  
   .searchBar:hover,
   .searchBar:active,
   .searchBar:has(input:focus-visible) {
     box-shadow: unset;
   }
-
+  
   .searchBar button {
     position: absolute;
     right: 29%;
   }
-
+  
   .searchBar img {
     width: 30px;
   }
-
+  
   .burgerMenu {
     display: flex;
     align-items: center;
     width: 30px;
   }
-
+  
   .burgerMenu img {
     width: 100%;
   }
-
+  
   #burgerMenu:checked ~ .menu {
     display: block;
-    position: fixed;
+    position: absolute;
     height: 400px;
     background: var(--honeydew);
     border-bottom: 1px solid var(--gray);
     top: 112px;
-    left: 37%;
+    left: 0;
     text-align: center;
-    animation-name: sideMenu;
-    animation-duration: 0.3s;
-    animation-timing-function: linear;
+    animation-name: fadingMenu;
+    animation-duration: 0.33s;
+    animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
   }
-
+  
+  .profileImg {
+    width: 50px;
+  }
   .buttonContainer button {
     margin: 5px;
   }
@@ -730,16 +725,11 @@ footer img {
     background: var(--honeydew);
     border-bottom: 1px solid var(--gray);
     top: -400px;
-    right: 0px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     left: 0;
-    right: 0;
     text-align: center;
     animation-name: fallingMenu;
-    animation-duration: 0.3s;
-    animation-timing-function: linear;
+    animation-duration: 0.33s;
+    animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
   }
@@ -782,28 +772,6 @@ footer img {
     justify-content: center;
   }
 
-  .cards {
-    align-items: center;
-  }
-
-  .cards p {
-    width: 80%;
-  }
-
-  .cardsContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 80%;
-    max-width: unset;
-  }
-
-  .card:hover {
-    animation: unset;
-  }
-
   .aboutUsContainer p {
     font-size: 1rem;
     padding: 0;
@@ -826,11 +794,6 @@ footer img {
     width: 100%;
     margin-top: 20px;
     text-align: center;
-  }
-
-  .founder {
-    width: 100%;
-    align-items: center;
   }
 
   .companyMedia {
